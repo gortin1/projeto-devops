@@ -18,17 +18,17 @@ Este projeto demonstra uma **integração CI/CD** de uma API em **Flask** (Pytho
 
 ```
 /
-├── app/                    # Código-fonte principal da API
-│   ├── static/            # Arquivos estáticos (ex: swagger.json)
-│   ├── tests/             # Testes automatizados
-│   ├── app.py             # Aplicação Flask
-│   ├── config.py          # Configurações do app
-│   └── requirements.txt   # Dependências Python
-├── Dockerfile             # Imagem Docker da API
-├── docker-compose.yml     # Orquestração local com Docker Compose
 ├── .github/workflows/     # CI/CD com GitHub Actions
 │   └── python-app.yml
-└── README.md              # Este arquivo
+├── app/                    # Código-fonte principal da API
+│   ├── static/            # Arquivos estáticos
+│   ├── tests/             # Testes automatizados
+│   └── app.py             # Aplicação Flask
+│   
+├── Dockerfile             # Imagem Docker da API
+├── docker-compose.yml     # Orquestração local com Docker Compose
+├── requirements.txt   # Dependências Python
+└── README.md              
 ```
 
 ---
@@ -67,7 +67,7 @@ A pipeline executa:
 ---
 ## 🧠 Tecnologias utilizadas
 
-- **Python 3.10**
+- **Python**
 - **Flask**
 - **SQLite** (quando aplicável)
 - **Docker & Docker Compose**
